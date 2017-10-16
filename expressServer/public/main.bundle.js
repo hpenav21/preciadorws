@@ -960,7 +960,7 @@ var WsUpdatePricesComponent = (function () {
     WsUpdatePricesComponent.prototype.readUpdatedPrices = function () {
         var _this = this;
         console.log("reading updated prices....");
-        this.http.get('http://localhost:8080/archivo/a').subscribe(function (data) {
+        this.http.get('http://104.154.33.238:8080/archivo/a').subscribe(function (data) {
             // Read the result field from the JSON response.
             var obj = data;
             var prices = JSON.parse(obj.prices);
